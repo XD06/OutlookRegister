@@ -1,0 +1,68 @@
+{
+  "choose_browser": "patchright",
+  "email_suffix": "@outlook.com",
+  "proxy_mode": "pool",
+  "proxy": "http://127.0.0.1:10808",
+  "headless": false,
+  "proxy_pool": {
+    "start": 8001,
+    "end": 8100
+  },
+  "proxy_file": "proxies.txt",
+  "proxy_auth": {
+    "username": "your_proxy_username",
+    "password": "your_proxy_password",
+    "proxy_type": "socks5"
+  },
+  "exclusive_proxy": {
+    "enable": false,
+    "api": "",
+    "password": "",
+    "pro": 1,
+    "count": 5,
+    "order": 2
+  },
+  "bot_protection_wait": 11,
+  "max_captcha_retries": 2,
+  "concurrent_flows": 1,
+  "max_tasks": 30,
+  "oauth2": {
+    "enable_oauth2": false,
+    "client_id": "",
+    "redirect_url": "",
+    "Scopes": [
+      "offline_access",
+      "https://graph.microsoft.com/Mail.ReadWrite",
+      "https://graph.microsoft.com/Mail.Send",
+      "https://graph.microsoft.com/User.Read"
+    ]
+  },
+  "playwright": {
+    "browser_path": ""
+  },
+  "info": "外层参数必须填写,内部参数可选.email_suffix参数只能是@outlook.com或者@hotmail.com.playwright可用性较差.并且使用playwright指纹浏览器要能过https://www.browserscan.net,否则请使用patchright.请本地搭建代理池.",
+  "bind_enabled": false,
+  "bind_target_count": [1, 2],
+  "bind_timeout_sec": 180,
+  "bind_captcha_max_rounds": 3,
+  "bind_debug": false,
+  "bind_domains": [
+    {
+      "domain": "example.com",
+      "code_api": "https://api.example.com/code"
+    }
+  ],
+  "bind_mail_source": "random",
+  "bind_cf_enabled": false,
+  "bind_legacy_enabled": false,
+  "bind_cf_http_direct": true,
+  "bind_code_proxy_fallback": "http://127.0.0.1:10808",
+  "bind_cf_api_base": "https://email.example.com",
+  "bind_cf_create_path": "/api/new_address",
+  "bind_cf_mails_path": "/api/parsed_mails",
+  "bind_cf_domains": [
+    "example.com"
+  ],
+  "bind_cf_timeout_ms": 60000,
+  "bind_cf_poll_interval_ms": 2000
+}
