@@ -114,3 +114,17 @@ run_batch.bat
 
 关于系统分层架构、状态机模型、反检测算法与全文件职责明细，请直接查阅：
 👉 **[ARCHITECTURE.md (系统架构与技术实现规范)](file:///c:/Users/dsk/Desktop/OutlookRegister/ARCHITECTURE.md)**
+
+---
+
+## 鸣谢与上游仓库 (Upstream & Acknowledgements)
+
+- **上游项目 (Upstream)**: 本项目基于 [LainsNL/OutlookRegister](https://github.com/LainsNL/OutlookRegister) 演进重构，在此对原作者的开源贡献表示衷心感谢。
+- **扩展与优化**: 在原项目基础上重构了代理池机制、增强了反爬风控对抗与 GeoIP 动态对齐、新增了 Post-Register 安全辅助邮箱自动绑定框架（支持 Cloudflare Mail Worker 与自建 API 双通道）、修复了多处异步会话与错误处理逻辑。
+
+---
+
+## 开源协议 (License)
+
+本项目采用 [MIT License](LICENSE) 许可协议。使用者需遵循相关法律法规，仅限用于合法测试与研究学习目的。
+
